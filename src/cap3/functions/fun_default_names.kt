@@ -12,5 +12,7 @@ fun main(){
 	
 	println(completeNameDefault(name="Caio"))
 	
+	println(completeNameDefault("Caio", middleName="Vinicius", lastName="Oliveira"))	
+	
 	println(completeNameDefault(lastName="Oliveira", name="Caio"))	
 }
