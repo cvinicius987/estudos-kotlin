@@ -14,6 +14,8 @@ open class Escola{
 class Sala : Escola(){
 	
 	public override fun lousa() = "Lousa da Sala"
+	
+	protected fun teste() = print("...")
 }
 
 fun main(args: Array<String>) {
@@ -22,7 +24,7 @@ fun main(args: Array<String>) {
 	
 	println(escola.carteira())
 	println(escola.cadeira())
-	
+
 	val sala = Sala()
 	
 	println(sala.lousa())
