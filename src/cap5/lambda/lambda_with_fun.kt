@@ -17,6 +17,13 @@ fun main(args: Array<String>) {
 		
     println(names)
 	
+	//Passando uma função para o metodo
+	val funToLetterC = fun(p:Person):Boolean{
+		return p.name.startsWith("C")
+	}
+		
+	letterC(list, funToLetterC)
+	
 	//Passando um Lambda para um metodo
 	letterC(list, {p:Person -> p.name.startsWith("C")})
 	
