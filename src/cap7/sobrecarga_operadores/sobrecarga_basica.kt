@@ -1,6 +1,6 @@
 package cap7.overload_operator
 
-import cap7.*
+import cap7.Point
 
 operator fun Char.times(times:Int):String{
 	
@@ -23,5 +23,4 @@ fun main(args: Array<String>) {
 	
 	//Sobrecarga com retorno diferente do tipo mandante
 	println('a' * 10)
-	
 }
