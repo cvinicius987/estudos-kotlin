@@ -1,4 +1,4 @@
-package cap6.readonly_mutable_collection;
+package cap6.collection.mutable_readonly;
 
 import java.util.Arrays;
 import java.util.Collections;

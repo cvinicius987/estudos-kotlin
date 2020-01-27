@@ -1,7 +1,9 @@
-package cap6.collection_java;
+package cap6.collection;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cap6.collection_java.Java_coll_to_kotlinKt;
 
 public class CollectionProcess {
 

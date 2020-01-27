@@ -4,7 +4,7 @@ import cap7.Point
 
 operator fun Point.inc():Point{
 	
-	return Point(this.one + 1 , this.two + 1)
+	return Point(this.x + 1 , this.y + 1)
 }
 
 fun main(args: Array<String>) {
