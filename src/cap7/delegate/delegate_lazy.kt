@@ -31,7 +31,7 @@ class Person(override val name:String) : PersonContract{
 	}
 }
 
-//Utilizando Delegate
+//Utilizando Delegate Com lazy
 class PersonDelegate(override val name:String) : PersonContract{
 	
 	override val emails by lazy {
