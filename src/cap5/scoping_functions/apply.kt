@@ -1,4 +1,4 @@
-package cap5.lambda_receptor_apply
+package cap5.scoping_functions
 
 import java.lang.StringBuilder
 

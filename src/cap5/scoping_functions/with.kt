@@ -1,7 +1,12 @@
-package cap5.lambda_receptor_with
+package cap5.scoping_functions
 
 import java.lang.StringBuilder
 
+/**
+ * With
+ *
+ * Passa o objeto e usa this para acessar suas propriedades
+ */
 fun numbers():String{
 	
 	val stringBuilder = StringBuilder()
