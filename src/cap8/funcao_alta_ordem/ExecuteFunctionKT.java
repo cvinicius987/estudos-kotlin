@@ -15,8 +15,9 @@ public class ExecuteFunctionKT {
 			}
 		});
 		
-		
 		//Java 8 ou superior
 		Fun_invoke_from_javaKt.invokeFromJava("Java Server Faces", str -> str.length());
+		
+		Fun_invoke_from_javaKt.invokeFromJava("JSP & Servlets", String::length);
 	}
 }
