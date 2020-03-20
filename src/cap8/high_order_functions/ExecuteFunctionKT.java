@@ -1,5 +1,6 @@
-package cap8.funcao_alta_ordem;
+package cap8.high_order_functions;
 
+import cap8.funcao_alta_ordem.Fun_invoke_from_javaKt;
 import kotlin.jvm.functions.Function1;
 
 public class ExecuteFunctionKT {

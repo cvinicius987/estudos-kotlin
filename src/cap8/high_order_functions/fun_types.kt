@@ -22,4 +22,18 @@ fun main(args: Array<String>) {
 	
 	println(withNull("kotlin", "Go"))
 	println(withNull("kotlin", null))
+	
+	//Declaração de um tipo função que pode ser null
+	var funNull:((String, String) -> Unit)? = null
+	
+	funNull = {name, lastname -> println("$name | $lastname")}
+	
+	funNull("Kotlin", "Jetbrains")
+	
+	//Declaração recebendo uma function ao invés de lambda
+	val funLocal:(String) -> Int = fun(value):Int{
+		return value.length
+	}
+	
+	println(funLocal("Kotlin em Ação"))
 }
