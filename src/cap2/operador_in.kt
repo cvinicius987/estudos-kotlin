@@ -1,4 +1,4 @@
-package repeticao
+package cap2
 
 fun isLetter(c:Char) = c in 'a'..'z' || c in 'A'..'Z'
 

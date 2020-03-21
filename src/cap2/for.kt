@@ -1,4 +1,4 @@
-package repeticao
+package cap2
 
 fun testBuzz(i:Int) =  when {
 	i % 15 == 0 -> "FizzBuzz"

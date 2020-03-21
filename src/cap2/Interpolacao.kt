@@ -1,4 +1,4 @@
-package basic
+package cap2
 
 fun name(name:String):String =  "A Linguagem é $name"
 		

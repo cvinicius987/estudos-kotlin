@@ -1,4 +1,4 @@
-package cap2.classes
+package cap2
 
 import cap6.nullable.Company
 

@@ -1,4 +1,4 @@
-package classes
+package cap2
 
 class Person(val name:String, var isMarried:Boolean){
 	

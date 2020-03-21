@@ -1,4 +1,4 @@
-package repeticao
+package cap2
 
 fun main(){
 	

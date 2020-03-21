@@ -1,4 +1,4 @@
-package exception
+package cap2
 
 import java.io.BufferedReader
 import java.lang.NumberFormatException

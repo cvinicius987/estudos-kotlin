@@ -1,4 +1,4 @@
-package smart_casts
+package cap2
 
 interface Expr
 

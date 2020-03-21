@@ -1,4 +1,4 @@
-package basic
+package cap2
 
 //Imutavel
 val str 		= "Nome...."

@@ -1,4 +1,4 @@
-package enums
+package cap2
 
 enum class Color(val hexa:String) {
 	
