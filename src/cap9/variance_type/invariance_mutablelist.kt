@@ -1,4 +1,4 @@
-package cap9.variancy
+package cap9.variance
 
 //Nesse caso o compilador permite devido a Ao tipo ser Any, e a List ser imutavel e readonly
 fun listNames(list:List<Any>){
