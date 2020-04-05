@@ -9,11 +9,16 @@ fun listNames(list:List<Any>){
 //Nesse caso o compilador NÂO permite devido a MutableList permite uma adição de varios objetos distintos
 fun listNamesNew(list:MutableList<Any>){
 	
-	println(list.joinToString())	
+	println(list.joinToString())
 }
 
 fun main(args: Array<String>) {
 	
+	/*
+     * Onde esperamos uma MutableList NÂO podemos passar uma List, pois a List é readonly
+     *
+     * Onde esperamos uma List podemos passar uma MutableList, pois esta herda List e apenas não será utilizado os metodos de escrita
+     */
 	listNames(listOf("java", "kotlin", "golang"))
 	
 	//Não compila devido a restrição com mutableList
