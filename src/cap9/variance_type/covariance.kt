@@ -3,8 +3,8 @@ package cap9.variance_type
 /*
  * Class ProcessCovariance, recebe um tipo T que deve ser um Shape ou um subtipo de Shape
  *
- * a palavra out marca o tipo como sendo COVARIANTE, em lugares onde temos a expressão
- * generica podemos passar um subtipo de T,
+ * a palavra out marca o tipo como sendo COVARIANTE
+ * em lugares onde temos a expressão generica podemos passar um subtipo de T,
  * out deve ser utilizado como saida, ou seja operações de retorno ou leitura
  * Podem tambem ser atributos val e var(private) nos construtores
  */

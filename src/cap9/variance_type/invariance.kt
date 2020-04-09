@@ -16,7 +16,10 @@ class Circle : Shape(){
 class ProcessShape<T : Shape>(val list:List<T>) : List<T> by list
 	
 //Metodo executeProcessShape, espera um ProcessShape<Shape> sendo INVARIANTE, ou seja o tipo esperado é um ProcessShape<Shape>
-fun executeProcessShape(processShape:ProcessShape<Shape>) = processShape.forEach { println(it.points()) }
+fun executeProcessShape(processShape:ProcessShape<Shape>):Unit {
+	
+	processShape.forEach { println(it.points()) }
+} 
 
 fun main(args: Array<String>) {
 		
@@ -24,6 +27,8 @@ fun main(args: Array<String>) {
 	
 	executeProcessShape(shapes)
 	
+	val mutCircles:MutableList<Circle> = mutableListOf(Circle(), Circle())
+
 	// ======================= Caso passar um ProcessInvariance<Circle> temos um erro de compilação devido a invariancia
-	//executeProcessShape(ProcessShape<Circle>(listOf(Circle(), Circle())))
+	//executeProcessShape(ProcessShape<Circle>(mutCircles))
 }
