@@ -4,7 +4,7 @@ import java.lang.StringBuilder
 
 fun main(args: Array<String>) {
 	
-	//Retorna o proprio objeto utilizado, usando a referencia this
+	//Retorna o proprio objeto utilizado, usando a referencia THIS
 	val result = StringBuilder().apply {
 		
 		this.append("StringBuilder com apply\n")

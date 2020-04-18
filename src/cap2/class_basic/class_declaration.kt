@@ -2,6 +2,7 @@ package cap2
 
 class Person(val name:String, var isMarried:Boolean){
 	
+	//Cria o atributo customName e atribui uma logica ao metodo get()
 	val customName:String
 	get(){
 		
