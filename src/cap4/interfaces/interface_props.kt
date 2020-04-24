@@ -27,7 +27,7 @@ class Decoder(val nameDecoder:String) : Category{
 fun main(args: Array<String>) {
 	
 	val tv = Tv("Samsung")
-	
+
 	println(tv.name+" -- "+tv.type)
 	
 	val dvd = Dvd("LG")

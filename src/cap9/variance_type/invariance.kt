@@ -30,5 +30,6 @@ fun main(args: Array<String>) {
 	val mutCircles:MutableList<Circle> = mutableListOf(Circle(), Circle())
 
 	// ======================= Caso passar um ProcessInvariance<Circle> temos um erro de compilação devido a invariancia
+	//onde esperamos um <Shape> não podemos passar <Circle>
 	//executeProcessShape(ProcessShape<Circle>(mutCircles))
 }

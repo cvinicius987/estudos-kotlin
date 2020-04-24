@@ -14,6 +14,13 @@ fun receiveMutable(list:MutableList<Any>){
 	println(list.joinToString())
 }
 
+//Nesse caso o compilador NÂO permite devido a MutableList
+//List é readonly portanto não podemos passar List
+fun <T : Any> receiveMutableTeste(list:MutableList<T>){
+	
+	println(list.joinToString())
+}
+
 fun main(args: Array<String>) {
 	
 	/*

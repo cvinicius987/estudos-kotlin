@@ -19,4 +19,8 @@ import kotlin.annotation.AnnotationTarget.*
 @Target(CLASS, ANNOTATION_CLASS, PROPERTY, FIELD, LOCAL_VARIABLE, VALUE_PARAMETER,
         CONSTRUCTOR, FUNCTION, PROPERTY_GETTER, PROPERTY_SETTER, TYPE, EXPRESSION, FILE, TYPEALIAS)
 @Retention(SOURCE)
-public annotation class Name(vararg val names: String)
+annotation class Name(vararg val names: String)
+
+annotation class Exemplo
+
+annotation class ExemploTwo(val name:String)
