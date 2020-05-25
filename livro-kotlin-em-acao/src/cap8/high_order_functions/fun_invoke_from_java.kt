@@ -1,4 +1,4 @@
-package cap8.funcao_alta_ordem
+package cap8.high_order_functions
 
 fun invokeFromJava(msg:String, convertToInt:(String) -> Int) = println(convertToInt(msg))
 
