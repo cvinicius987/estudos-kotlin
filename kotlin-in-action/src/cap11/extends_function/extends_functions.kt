@@ -1,11 +1,11 @@
-package cap11.invoke
+package cap11.extends_function
 
 data class Product(val name:String, val price:Double, val type:Int)
 
-//O estender um tipo função, teremos que implementar um medtodo invoke ocm a assinatura do herança
+//O estender um tipo funï¿½ï¿½o, teremos que implementar um medtodo invoke ocm a assinatura do heranï¿½a
 class DefineProduct(val type:Int) : (Product) -> Boolean {
 	
-	override fun invoke(product:Product):Boolean{
+	override fun invoke(product: Product):Boolean{
 		
 		return product.type == type && product.price > 5.0
 	}

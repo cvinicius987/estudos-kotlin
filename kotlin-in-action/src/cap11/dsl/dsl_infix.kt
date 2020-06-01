@@ -33,11 +33,29 @@ class StartWrapper(val value:String){
 	}
 }
 
+//Objeto usado como parametro no metodo infixo de start, usado como gramatica
+object end
+
+class EndWrapper(val value:String){
+
+	infix fun with(prefix:String){
+
+		return if(value.endsWith(prefix)){
+			println(" Sim, a variavel $value TERMINA com os caracteres $prefix")
+		}
+		else
+			println(" Não, a variavel $value NÂO TERMINA com $prefix")
+	}
+}
+
 //Metodo infixo com extensão para o Tipo do Matcher
 infix fun <T> T.should(matcher:Matcher<T>) = matcher.test(this)
 
 //Metodo infixo com extensão para o Tipo String
 infix fun String.should(x:start):StartWrapper = StartWrapper(this)
+
+//Metodo infixo com extensão para o Tipo String manipulando o retorno
+infix fun String.should(x:end):EndWrapper = EndWrapper(this)
 
 fun main(args: Array<String>) {
 	
@@ -45,5 +63,5 @@ fun main(args: Array<String>) {
 	
 	"Kotlin" should startWith("Kot")
 	
-	"Kotlin" should start with "Kot"
+	"Kotlin" should end with "in"
 }

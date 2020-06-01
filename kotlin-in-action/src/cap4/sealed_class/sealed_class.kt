@@ -1,7 +1,5 @@
 package cap4.selead_class
 
-import java.lang.IllegalArgumentException
-
 sealed class Shape{}
 
 class Circle(val name:String) : Shape()

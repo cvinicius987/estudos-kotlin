@@ -1,4 +1,4 @@
-package cap11.dsl
+package cap11.invoke
 
 class Dependency{
 	
@@ -6,7 +6,7 @@ class Dependency{
 		println(" Added a dependency: $coord")
 	}
 	
-	operator fun invoke(body:Dependency.() -> Unit){
+	operator fun invoke(body: Dependency.() -> Unit){
 		
 		body()
 	}
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 	dependencies.compile("kotlin.reflect")
 	
 	//Chama o metodo invoke, passando uma lambda com receptor
-	//dentro da lambda temos acesso ao this do receptor, que no caso é Dependency
+	//dentro da lambda temos acesso ao this do receptor, que no caso ï¿½ Dependency
 	dependencies {
 		this.compile("org.springframework")
 	}

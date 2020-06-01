@@ -1,6 +1,6 @@
-package cap11.dsl.lambda_with_receptor
+package cap11.lambda_with_receptor
 
-//o buildAction se torna uma função do T dentro do escopo do metodo
+//o buildAction se torna uma funÃ§Ã£o do T dentro do escopo do metodo
 //Dentro da lambda podemos acessar todos as propriedades do parametro com this
 //Executa a lambda passada e retorna o this
 inline fun <T> T.copyApply(buildAction:T.() -> Unit):T{
@@ -10,9 +10,9 @@ inline fun <T> T.copyApply(buildAction:T.() -> Unit):T{
 	return this
 }
 
-//o buildAction se torna uma função do parametro T dentro do escopo do metodo
-//Dentro da lambda (função buildAction) podemos acessar todos as propriedades do parametro T como this, porque ela faz parte do objeto
-//O valor de R, será definido através do valor do resultado da expressão lambda
+//o buildAction se torna uma funï¿½ï¿½o do parametro T dentro do escopo do metodo
+//Dentro da lambda (funï¿½ï¿½o buildAction) podemos acessar todos as propriedades do parametro T como this, porque ela faz parte do objeto
+//O valor de R, serï¿½ definido atravï¿½s do valor do resultado da expressï¿½o lambda
 inline fun <T, R> copyWith(param:T, buildAction:T.() -> R):R{
 	
 	return param.buildAction()
