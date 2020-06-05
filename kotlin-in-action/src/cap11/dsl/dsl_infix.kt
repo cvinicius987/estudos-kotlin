@@ -62,6 +62,8 @@ fun main(args: Array<String>) {
 	"Kotlin" should startWith("Java")
 	
 	"Kotlin" should startWith("Kot")
-	
+
+	"Kotlin" should start with "in"
+
 	"Kotlin" should end with "in"
 }

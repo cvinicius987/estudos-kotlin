@@ -1,5 +1,7 @@
 package cap11.invoke
 
+import java.util.function.Consumer
+
 class Dependency{
 	
 	fun compile(coord:String){
@@ -7,7 +9,7 @@ class Dependency{
 	}
 	
 	operator fun invoke(body: Dependency.() -> Unit){
-		
+
 		body()
 	}
 }
